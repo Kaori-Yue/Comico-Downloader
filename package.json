@@ -1,0 +1,21 @@
+{
+  "name": "comico",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "node --inspect=5858 index.js",
+    "compile": "tsc -p tsconfig.json --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^8.0.10",
+    "@types/request": "0.0.45",
+    "@types/urijs": "^1.15.33",
+    "request": "^2.81.0",
+    "urijs": "^1.18.10"
+  }
+}

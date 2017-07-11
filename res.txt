@@ -1,0 +1,4627 @@
+
+> comico@1.0.0 debug /mnt/d/Code/Typescript/comico
+> node --inspect=5858 index.js
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="comico, การ์ตูน, webtoon, เว็บตูน, โคมิโค, โคมิโค่, คอมิโค่, เมดสาวหน้าใสกับคุณชายปากร้าย, Tobise , ebook, อีบุ๊ค">
+    <meta name="description" content="การ์ตูนออนไลน์ชั้นนำของ Comico จากนักเขียนชื่อดังของไทยและผลงานการ์ตูนชั้นนำจากญี่ปุ่น เกาหลี ไต้หวัน ซึ่งสร้างสถิติยอดผู้อ่านถล่มทลายและมีแฟนคลับติดตามอย่างเหนียวแน่น">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta property="og:title" content="เมดสาวหน้าใสกับคุณชายปากร้าย : Comico – เว็ปอ่านการ์ตูนออนไลน์">
+    <meta property="og:description" content="อยากใกล้ชิดแต่กลับผิดที่ผิดทางเสียได้ | เขาคือนายน้อยผู้ปากไม่ตรงกับใจตัวเอง
+ส่วนเธอคือเมดสาวที่อยากทำความสนิทสนมกับเขาด้วยอย่างมากถึงมากที่สุด">
+    <meta property="og:image" content="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_kv720x338.jpg">
+    <meta property="og:url" content="http://www.comico.in.th/titles/73">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="comico">
+    <meta property="fb:app_id" content="850956428354950">
+
+    <!--Add App Link for dynamic re targeting -->
+    <meta property="al:ios:url" content="http://redirect-analytics.toast.com/bridge.nhn?channel=709&path=6360" />
+    <meta property="al:ios:app_store_id" content="1014370177" />
+    <meta property="al:ios:app_name" content="comico-thailand" />
+
+    <meta property="al:android:package" content="com.toast.comico.th" />
+    <meta property="al:android:url" content="http://redirect-analytics.toast.com/bridge.nhn?channel=709&path=6359" />
+    <meta property="al:android:app_name" content="comico-thailand" />
+
+
+    <!-- Add feed for dynamic re-targeting
+    <rss xmlns:g="http://base.google.com/ns/1.0" version="2.0">
+        <channel>
+            <title>텐바이텐</title>
+            <link>http://www.10x10.co.kr</link>
+            <description>텐바이텐 Facebook Dynamic Ads 집행을 위한 Feed</description>
+
+            <item>
+                <g:id>73</g:id>
+                <g:title>เมดสาวหน้าใสกับคุณชายปากร้าย</g:title>
+                <g:description>null</g:description>
+                <g:product_type>
+                    Japan,
+                
+                    History/ Period,
+                
+                    Fantasy,
+                
+                    On-going,
+                
+                    Romance
+                </g:product_type>
+                <g:link>comico.in.th/titles/73/chapters/1</g:link>
+                <g:image_link> http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_kv275x275.jpg</g:image_link>
+                <g:condition>
+                    
+                    
+                        UP
+                    
+
+                    
+                    
+                </g:condition>
+                <g:availability>in stock</g:availability>
+                <g:expiration_date>YYYY-MM-DD</g:expiration_date>
+            </item>
+        </channel>
+    </rss>
+-->
+    <title>เมดสาวหน้าใสกับคุณชายปากร้าย : comico - เว็ปอ่านการ์ตูนออนไลน์</title>
+    
+
+
+
+<link rel="shortcut icon" type="image/ico" href="http://comico.toastoven.net/comico/img/r01/common/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="/resources/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/resources/css/common.css?201707100152">
+<link rel="stylesheet" type="text/css" href="/resources/css/layout.css?201707100152">
+<link rel="stylesheet" type="text/css" href="/resources/css/comico.css?201707100152">
+
+
+<meta name="google-site-verification" content="jTiQw2KoLwbLY43XHTMcOKSRsZN7lDIXJnNDMkx2yX4"/>
+<script>
+    document.domain = 'comico.in.th';
+</script>
+
+
+<script>
+	if(typeof fbq === 'undefined') {
+		!function (f, b, e, v, n, t, s) {
+			if (f.fbq)return;
+			n = f.fbq = function () {
+				n.callMethod ?
+						n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq)f._fbq = n;
+			n.push = n;
+			n.loaded = !0;
+			n.version = '2.0';
+			n.queue = [];
+			t = b.createElement(e);
+			t.async = !0;
+			t.src = v;
+			s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window,
+				document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+
+		fbq('init', '979760162114876');
+		fbq('track', 'PageView');
+	}
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+
+	
+    ga('create', 'UA-71862306-1', 'auto');
+    ga('send', 'pageview');
+	
+
+
+</script>
+<noscript>
+	<img height="1" width="1" style="display:none"
+		 src="https://www.facebook.com/tr?id=979760162114876&ev=PageView&noscript=1"/>
+</noscript>
+
+<applink property="ios_url" content="http://redirect-analytics.toast.com/bridge.nhn?channel=709&path=6360"/>
+<applink property="ios_app_store_id" content="1014370177"/>
+<applink property="ios_app_name" content="comico-thailand"/>
+
+<applink property="android_url" content="http://redirect-analytics.toast.com/bridge.nhn?channel=709&path=6359"/>
+<applink property="android_package" content="com.toast.comico.th"/>
+<applink property="android_app_name" content="comico-thailand"/>
+
+</head>
+<body>
+<div id="wrap" class="chapter">
+    
+
+
+
+<div id="header">
+
+    <div class="navwrap">
+        <h1><a href="/" class="sp N=a:gnb.comico" >COMICO</a></h1>
+        <div class="top_menu choose">
+            <ul>
+                <li class="on"><a href="/">เว็บคอมมิค</a>
+                </li>
+                <li ><a href="/ecomic">อีคอมมิค</a>
+                </li>
+                <li ><a href="/novel">เว็บโนเวล</a>
+                </li>
+            </ul>
+        </div>
+        <div class="sch_box">
+            
+            <form class="sch" action="/search" method="get">
+            <fieldset id="search">
+            <legend>ค้นหา</legend>
+            <span class="inpsch sp_lay">
+            <label for="keyword" class="blind">ค้นหา</label>
+            <input type="text" id="keyword" name="keyword" autocomplete="off" placeholder="" value="" maxlength="20"
+            class="">
+            <input type="hidden" class="submitInput" name="query">
+            </span>
+            <button type="submit" class="btnsch N=a:lnb.search"><span class="sp">ค้นหา</span></button>
+            </fieldset>
+            <ul class="schly hide">
+
+            </ul>
+
+            </form>
+        </div>
+
+        
+        
+        <ul class="mynav">
+            <li><a href="#" class="btn _loginBtn N=a:mnb.login">ล็อกอิน</a></li>
+                
+            
+            
+    
+
+                <li><a class="bookshelf btn" href="/bookshelf"><img src="/resources/img/layout/book-shelf-black.png"><span>ชั้นหนังสือ</span></a></li>
+
+                <!-- Thanh delete quest
+            <li><a href="/quest" class="N=a:mnb.quest">코미코퀘스트</a><span class="bar sp"></span></li>
+            -->
+                
+                
+                
+                <li><a href="#" class="_loginBtn btn-upload">
+                        <img src="/resources/img/bg_btn_upload.png" />
+                        <span>อัพโหลดผลงาน
+                        </span></a></li>
+                
+                
+                
+    </div>
+    <div class="sub_menu">
+        <div class="sub_wrap">
+                
+                    
+                    
+                    
+                        <ul >
+                        <li  ><a href="/">หน้าแรก</a></li>
+                        <li  ><a href="/genre">ประเภท</a></li>
+                        <li ><a href="/completed">จบ</a></li>
+                        <li ><a href="/ranking">อันดับ</a></li>
+                        <li class="bar "><a href="/league">ชาลเลนจ์</a></li>
+                        <li class="bar"></li>
+                        </ul>
+                    
+
+                
+
+
+        </div>
+
+    </div>
+</div>
+
+
+<input type="hidden" value="https://id.payco.com/oauth2.0/authorize?response_type=code&termsYN=Y&userLocale=th_TH&serviceProviderCode=COMICOTHA" id="loginUrl">
+<input type="hidden" value="3RDRYJZPJGu6eRQTyIMJ" id="clientId">
+<input type="hidden" value="http://www.comico.in.th/oauth/logout" id="logoutUrl">
+<input type="hidden" value="https://id.payco.com/login.nhn?m=bridge" id="paycoBridgeUrl">
+<input type="hidden" value="https://id.payco.com/myinfo.nhn?userLocale=th_TH&serviceProviderCode=COMICOTHA" id="modificationUrl">
+<input type="hidden" value="http://www.comico.in.th/oauth/response" id="nextLoginUrl">
+<input type="hidden" value="http://www.comico.in.th/" id="nextLogoutUrl">
+<input type="hidden" value="http://comico.payco.com/oauth2.0/appCallback&svcType=APP&serviceProviderCode=COMICOTHA" id="nextModificationUrl">
+
+    
+        
+    
+    
+
+
+
+    
+        
+    
+    
+
+<!--Tuanthanh.tran disable check CERTIFICATION-->
+<input type="hidden" value="true" id="certification">
+
+	
+
+<input type="hidden" value="N" id="loginStatus">
+<input type="hidden" value="N" id="loginSocialStatus">
+    <!-- container -->
+    <div id="container" class="bggray">
+        <!-- content -->
+        <div class="content">
+            <div class="chapban">
+                <span class="bg_img"><img src="http://comicothimg.gslb.toastoven.net/comico/img/up/title/73/cover/73_1458804782230.jpeg" width="2560" height="424" alt="เมดสาวหน้าใสกับคุณชายปากร้าย"></span>
+                <span class="aln"></span>
+                <span id="titleInfo" data-title="เมดสาวหน้าใสกับคุณชายปากร้าย" data-author="Tobise" data-image="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_kv312x232.jpg"></span>
+                <div class="con">
+                    <h2>เมดสาวหน้าใสกับคุณชายปากร้าย</h2>
+                    <dl>
+                        <dt class="blind">รายละเอียดคอนเทนต์</dt>
+                        <dd class="name"><span class="aln">Tobise</span> <span class="bar sp"></span>
+                     <span class="aln">
+	                    
+                            Japan,
+                        
+                            History/ Period,
+                        
+                            Fantasy,
+                        
+                            On-going,
+                        
+                            Romance
+                        
+	                 </span>
+                        </dd>
+                        <dd class="dsc">เขาคือนายน้อยผู้ปากไม่ตรงกับใจตัวเอง<br/>ส่วนเธอคือเมดสาวที่อยากทำความสนิทสนมกับเขาด้วยอย่างมากถึงมากที่สุด</dd>
+                        <dd class="love"><span class="btnlove sp">ถูกใจ</span> <span class="aln">246,008</span>
+                        </dd>
+                    </dl>
+                    <div class="btnbx">
+                        
+                        
+                            
+                            <a href="#" class="btn btnbookmark sp _favorite N=a:info.favorite">
+                                
+                                
+                                <span class="sp"></span><span class="aln">ติดตาม</span></a>
+                            <a href="/titles/73/chapters/1" class="btn btnfirst sp N=a:info.1st">ดูตอนแรก</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contwrap">
+                
+
+                
+
+                <div class="chaphd" style="margin: 24px 0 20px;">
+                    
+                   		
+                        
+                        
+                            <p class="notice">
+                                อัพเดทประจำวัน
+                                <strong>
+                                    
+                                        วันอังคาร 
+                                    
+                                </strong>
+                            </p>
+                        
+                        
+                    
+                </div>
+
+                <h3 class="blind">รายการตอน</h3>
+                <ul class="chaplst _chapterList">
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                
+                            
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="102" data-coinhour="192" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_102_th312x232.jpg" data-chaptername="Story 100 : สิ่งที่ยกให้ไม่ได้" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                                <a href="/titles/73/chapters/102" class="link _reqPg N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_102_th312x232.jpg" alt="Story 100 : สิ่งที่ยกให้ไม่ได้" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                        <span class="bg"></span><span class="lock sp">ตอนที่ยังไม่ได้ซื้อ</span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 100 : สิ่งที่ยกให้ไม่ได้</span>
+                                        <br>
+                                        
+                                        <span class="lbl_preview">อ่านก่อนใคร</span>
+                                        
+                                        
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">9</span></li>
+                            <li class="date">
+                                
+                                2017.08.08
+                            </li>
+                            
+                                
+                                
+                                
+                                
+                                
+                                    
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                        
+                                        
+                                    
+
+                                    
+                                        
+                                        
+                                            <li class="point">
+                                                <button type="button" class="pcon">
+				   	                        <span class="pcoinin">
+                                                <span class="sp coin">Coin</span>
+						                        <span class="point_c"><span
+                                                        class="aln">50/30</span></span>
+											</span>
+                                                </button>
+                                            </li>
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                    
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                
+                            
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="101" data-coinhour="192" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_101_th312x232.jpg" data-chaptername="Story 99 : ไม่ยกให้" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                                <a href="/titles/73/chapters/101" class="link _reqPg N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_101_th312x232.jpg" alt="Story 99 : ไม่ยกให้" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                        <span class="bg"></span><span class="lock sp">ตอนที่ยังไม่ได้ซื้อ</span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 99 : ไม่ยกให้</span>
+                                        <br>
+                                        
+                                        <span class="lbl_preview">อ่านก่อนใคร</span>
+                                        
+                                        
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">47</span></li>
+                            <li class="date">
+                                
+                                2017.08.01
+                            </li>
+                            
+                                
+                                
+                                
+                                
+                                
+                                    
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                        
+                                        
+                                    
+
+                                    
+                                        
+                                        
+                                            <li class="point">
+                                                <button type="button" class="pcon">
+				   	                        <span class="pcoinin">
+                                                <span class="sp coin">Coin</span>
+						                        <span class="point_c"><span
+                                                        class="aln">50/30</span></span>
+											</span>
+                                                </button>
+                                            </li>
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                    
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                
+                            
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="100" data-coinhour="192" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_100_th312x232.jpg" data-chaptername="Story 98 : ชื่อที่ชอบ" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                                <a href="/titles/73/chapters/100" class="link _reqPg N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_100_th312x232.jpg" alt="Story 98 : ชื่อที่ชอบ" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                        <span class="bg"></span><span class="lock sp">ตอนที่ยังไม่ได้ซื้อ</span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 98 : ชื่อที่ชอบ</span>
+                                        <br>
+                                        
+                                        <span class="lbl_preview">อ่านก่อนใคร</span>
+                                        
+                                        
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">43</span></li>
+                            <li class="date">
+                                
+                                2017.07.25
+                            </li>
+                            
+                                
+                                
+                                
+                                
+                                
+                                    
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                        
+                                        
+                                    
+
+                                    
+                                        
+                                        
+                                            <li class="point">
+                                                <button type="button" class="pcon">
+				   	                        <span class="pcoinin">
+                                                <span class="sp coin">Coin</span>
+						                        <span class="point_c"><span
+                                                        class="aln">50/30</span></span>
+											</span>
+                                                </button>
+                                            </li>
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                    
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                
+                            
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="99" data-coinhour="192" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_99_th312x232.jpg" data-chaptername="Story 97 : เหตุเพราะพิษไข้ (4)" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                                <a href="/titles/73/chapters/99" class="link _reqPg N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_99_th312x232.jpg" alt="Story 97 : เหตุเพราะพิษไข้ (4)" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                        <span class="bg"></span><span class="lock sp">ตอนที่ยังไม่ได้ซื้อ</span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 97 : เหตุเพราะพิษไข้ (4)</span>
+                                        <br>
+                                        
+                                        <span class="lbl_preview">อ่านก่อนใคร</span>
+                                        
+                                        
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">48</span></li>
+                            <li class="date">
+                                
+                                2017.07.18
+                            </li>
+                            
+                                
+                                
+                                
+                                
+                                
+                                    
+                                        
+                                            
+                                            
+                                            
+                                            
+                                            
+                                        
+                                        
+                                    
+
+                                    
+                                        
+                                        
+                                            <li class="point">
+                                                <button type="button" class="pcon">
+				   	                        <span class="pcoinin">
+                                                <span class="sp coin">Coin</span>
+						                        <span class="point_c"><span
+                                                        class="aln">50/30</span></span>
+											</span>
+                                                </button>
+                                            </li>
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                    
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="98" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_98_th312x232.jpg" data-chaptername="Story 96 : เหตุเพราะพิษไข้ (3)" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/98" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_98_th312x232.jpg" alt="Story 96 : เหตุเพราะพิษไข้ (3)" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 96 : เหตุเพราะพิษไข้ (3)</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">218</span></li>
+                            <li class="date">
+                                
+                                2017.07.11
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="97" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_97_th312x232.jpg" data-chaptername="Story 95 : เหตุเพราะพิษไข้ (2)" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/97" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_97_th312x232.jpg" alt="Story 95 : เหตุเพราะพิษไข้ (2)" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 95 : เหตุเพราะพิษไข้ (2)</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">528</span></li>
+                            <li class="date">
+                                
+                                2017.07.04
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="96" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_96_th312x232.jpg" data-chaptername="Story 94 : เหตุเพราะพิษไข้" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/96" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_96_th312x232.jpg" alt="Story 94 : เหตุเพราะพิษไข้" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 94 : เหตุเพราะพิษไข้</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">661</span></li>
+                            <li class="date">
+                                
+                                2017.06.27
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="95" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_95_th312x232.jpg" data-chaptername="Story 93 : Bed Happening" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/95" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_95_th312x232.jpg" alt="Story 93 : Bed Happening" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 93 : Bed Happening</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">731</span></li>
+                            <li class="date">
+                                
+                                2017.06.20
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="94" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_94_th312x232.jpg" data-chaptername="Story 92 : เจอกันพรุ่งนี้" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/94" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_94_th312x232.jpg" alt="Story 92 : เจอกันพรุ่งนี้" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 92 : เจอกันพรุ่งนี้</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">735</span></li>
+                            <li class="date">
+                                
+                                2017.06.13
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="93" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_93_th312x232.jpg" data-chaptername="Story 91 : ริมฝีปากที่เอื้อนเอ่ย" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/93" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_93_th312x232.jpg" alt="Story 91 : ริมฝีปากที่เอื้อนเอ่ย" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 91 : ริมฝีปากที่เอื้อนเอ่ย</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">896</span></li>
+                            <li class="date">
+                                
+                                2017.06.06
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="92" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_92_th312x232.jpg" data-chaptername="Story 90 : ความรู้สึกที่ท้วมท้น" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/92" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_92_th312x232.jpg" alt="Story 90 : ความรู้สึกที่ท้วมท้น" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 90 : ความรู้สึกที่ท้วมท้น</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">893</span></li>
+                            <li class="date">
+                                
+                                2017.05.30
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="91" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_91_th312x232.jpg" data-chaptername="Story 89 : ล้นปรี่" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/91" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_91_th312x232.jpg" alt="Story 89 : ล้นปรี่" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 89 : ล้นปรี่</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">1,034</span></li>
+                            <li class="date">
+                                
+                                2017.05.23
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="90" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_90_th312x232.jpg" data-chaptername="Story 88 : ขากลับของคนสองคน" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/90" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_90_th312x232.jpg" alt="Story 88 : ขากลับของคนสองคน" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 88 : ขากลับของคนสองคน</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">904</span></li>
+                            <li class="date">
+                                
+                                2017.05.16
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="89" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_89_th312x232.jpg" data-chaptername="Story 87 : ฝั่งตรงข้าม" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/89" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_89_th312x232.jpg" alt="Story 87 : ฝั่งตรงข้าม" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 87 : ฝั่งตรงข้าม</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">970</span></li>
+                            <li class="date">
+                                
+                                2017.05.09
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="88" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_88_th312x232.jpg" data-chaptername="Story 86 : เหตุผลของมัน" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/88" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_88_th312x232.jpg" alt="Story 86 : เหตุผลของมัน" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 86 : เหตุผลของมัน</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">1,115</span></li>
+                            <li class="date">
+                                
+                                2017.05.02
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="87" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_87_th312x232.jpg" data-chaptername=" Story 85 : บังเอิญ" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/87" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_87_th312x232.jpg" alt=" Story 85 : บังเอิญ" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span> Story 85 : บังเอิญ</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">1,114</span></li>
+                            <li class="date">
+                                
+                                2017.04.25
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="86" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_86_th312x232.jpg" data-chaptername="Story 84 : เด็กผู้ชายนี่นา" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/86" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_86_th312x232.jpg" alt="Story 84 : เด็กผู้ชายนี่นา" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 84 : เด็กผู้ชายนี่นา</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">1,053</span></li>
+                            <li class="date">
+                                
+                                2017.04.18
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="85" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_85_th312x232.jpg" data-chaptername="Story 83 : ดาวหมุนติ้ว" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/85" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_85_th312x232.jpg" alt="Story 83 : ดาวหมุนติ้ว" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 83 : ดาวหมุนติ้ว</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">1,104</span></li>
+                            <li class="date">
+                                
+                                2017.04.11
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="84" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_84_th312x232.jpg" data-chaptername="Story 82 : Sister Panic" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/84" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_84_th312x232.jpg" alt="Story 82 : Sister Panic" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 82 : Sister Panic</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">1,270</span></li>
+                            <li class="date">
+                                
+                                2017.04.04
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="83" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_83_th312x232.jpg" data-chaptername="Story 81 : ผู้ชายก็แบบนี้แหละ" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/83" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_83_th312x232.jpg" alt="Story 81 : ผู้ชายก็แบบนี้แหละ" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 81 : ผู้ชายก็แบบนี้แหละ</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">1,372</span></li>
+                            <li class="date">
+                                
+                                2017.03.28
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="82" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_82_th312x232.jpg" data-chaptername="Story 80 : อยู่ใกล้แต่เหมือนไกล" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/82" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_82_th312x232.jpg" alt="Story 80 : อยู่ใกล้แต่เหมือนไกล" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 80 : อยู่ใกล้แต่เหมือนไกล</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">1,460</span></li>
+                            <li class="date">
+                                
+                                2017.03.21
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="81" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_81_th312x232.jpg" data-chaptername="Story 79 : สิ่งที่มองเห็น" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/81" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_81_th312x232.jpg" alt="Story 79 : สิ่งที่มองเห็น" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 79 : สิ่งที่มองเห็น</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">1,566</span></li>
+                            <li class="date">
+                                
+                                2017.03.13
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="80" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_80_th312x232.jpg" data-chaptername="Story 78 : คนข้างกายยามหลับไหล" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/80" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_80_th312x232.jpg" alt="Story 78 : คนข้างกายยามหลับไหล" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 78 : คนข้างกายยามหลับไหล</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">1,796</span></li>
+                            <li class="date">
+                                
+                                2017.03.06
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="79" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_79_th312x232.jpg" data-chaptername="Story 77 : ความสับสน" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/79" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_79_th312x232.jpg" alt="Story 77 : ความสับสน" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 77 : ความสับสน</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">1,868</span></li>
+                            <li class="date">
+                                
+                                2017.02.27
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="78" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_78_th312x232.jpg" data-chaptername="Story 76 : เศษเสี้ยวแห่งความรู้สึก (2)" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/78" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_78_th312x232.jpg" alt="Story 76 : เศษเสี้ยวแห่งความรู้สึก (2)" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 76 : เศษเสี้ยวแห่งความรู้สึก (2)</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">1,918</span></li>
+                            <li class="date">
+                                
+                                2017.02.20
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="77" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_77_th312x232.jpg" data-chaptername="Story 75 : เศษเสี้ยวแห่งความรู้สึก" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/77" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_77_th312x232.jpg" alt="Story 75 : เศษเสี้ยวแห่งความรู้สึก" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 75 : เศษเสี้ยวแห่งความรู้สึก</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">2,281</span></li>
+                            <li class="date">
+                                
+                                2017.02.13
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="76" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_76_th312x232.jpg" data-chaptername="Story 74 : ความรักหนักอก" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/76" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_76_th312x232.jpg" alt="Story 74 : ความรักหนักอก" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 74 : ความรักหนักอก</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">1,895</span></li>
+                            <li class="date">
+                                
+                                2017.02.06
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="75" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_75_th312x232.jpg" data-chaptername="Story 73 : ลมหนุน" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/75" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_75_th312x232.jpg" alt="Story 73 : ลมหนุน" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 73 : ลมหนุน</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">2,296</span></li>
+                            <li class="date">
+                                
+                                2017.01.30
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="74" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_74_th312x232.jpg" data-chaptername="Story 72 : ไม่อาจถอนคืน" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/74" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_74_th312x232.jpg" alt="Story 72 : ไม่อาจถอนคืน" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 72 : ไม่อาจถอนคืน</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">2,055</span></li>
+                            <li class="date">
+                                
+                                2017.01.23
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="73" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_73_th312x232.jpg" data-chaptername="Story 71 : ถามเองตอบเอง" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/73" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_73_th312x232.jpg" alt="Story 71 : ถามเองตอบเอง" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 71 : ถามเองตอบเอง</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">2,137</span></li>
+                            <li class="date">
+                                
+                                2017.01.19
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="72" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_72_th312x232.jpg" data-chaptername="Story 70 : สายลมที่พัดผ่านมา" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/72" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_72_th312x232.jpg" alt="Story 70 : สายลมที่พัดผ่านมา" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 70 : สายลมที่พัดผ่านมา</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">2,251</span></li>
+                            <li class="date">
+                                
+                                2017.01.16
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="71" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_71_th312x232.jpg" data-chaptername="Story 69 : เด็กหลงทางในความรัก (2)" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/71" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_71_th312x232.jpg" alt="Story 69 : เด็กหลงทางในความรัก (2)" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 69 : เด็กหลงทางในความรัก (2)</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">2,170</span></li>
+                            <li class="date">
+                                
+                                2017.01.12
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="70" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_70_th312x232.jpg" data-chaptername="Story 68 : เด็กหลงทางในความรัก" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/70" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_70_th312x232.jpg" alt="Story 68 : เด็กหลงทางในความรัก" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 68 : เด็กหลงทางในความรัก</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">2,172</span></li>
+                            <li class="date">
+                                
+                                2017.01.09
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="69" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_69_th312x232.jpg" data-chaptername="Story 67 : การกระทำ" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/69" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_69_th312x232.jpg" alt="Story 67 : การกระทำ" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 67 : การกระทำ</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">2,303</span></li>
+                            <li class="date">
+                                
+                                2017.01.05
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="68" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_68_th312x232.jpg" data-chaptername="Story 66 : หึงหวงและหลังจากนั้น" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/68" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_68_th312x232.jpg" alt="Story 66 : หึงหวงและหลังจากนั้น" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 66 : หึงหวงและหลังจากนั้น</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">2,560</span></li>
+                            <li class="date">
+                                
+                                2017.01.02
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="67" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_67_th312x232.jpg" data-chaptername="Story 65 : เพื่อนสมัยเด็ก" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/67" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_67_th312x232.jpg" alt="Story 65 : เพื่อนสมัยเด็ก" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 65 : เพื่อนสมัยเด็ก</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">2,543</span></li>
+                            <li class="date">
+                                
+                                2016.12.29
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="66" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_66_th312x232.jpg" data-chaptername="Story 64 : ในรอบ 5 ปี" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/66" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_66_th312x232.jpg" alt="Story 64 : ในรอบ 5 ปี" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 64 : ในรอบ 5 ปี</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">2,525</span></li>
+                            <li class="date">
+                                
+                                2016.12.26
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="65" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_65_th312x232.jpg" data-chaptername="Story 63 : สองคนนั้นในสายตาของฉัน" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/65" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_65_th312x232.jpg" alt="Story 63 : สองคนนั้นในสายตาของฉัน" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 63 : สองคนนั้นในสายตาของฉัน</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">2,357</span></li>
+                            <li class="date">
+                                
+                                2016.12.22
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="64" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_64_th312x232.jpg" data-chaptername="Story 62 : เมืองแห่งการค้าและข่าวลือ" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/64" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_64_th312x232.jpg" alt="Story 62 : เมืองแห่งการค้าและข่าวลือ" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 62 : เมืองแห่งการค้าและข่าวลือ</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">2,426</span></li>
+                            <li class="date">
+                                
+                                2016.12.19
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="63" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_63_th312x232.jpg" data-chaptername="Story 61 : ถึงที่หมาย!" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/63" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_63_th312x232.jpg" alt="Story 61 : ถึงที่หมาย!" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 61 : ถึงที่หมาย!</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">2,525</span></li>
+                            <li class="date">
+                                
+                                2016.12.15
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="62" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_62_th312x232.jpg" data-chaptername="Story 60 : ออกเดินทาง!" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/62" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_62_th312x232.jpg" alt="Story 60 : ออกเดินทาง!" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 60 : ออกเดินทาง!</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">2,676</span></li>
+                            <li class="date">
+                                
+                                2016.12.12
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="61" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_61_th312x232.jpg" data-chaptername="ตอนพิเศษ: ยามว่างในแต่ละวัน (2)" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/61" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_61_th312x232.jpg" alt="ตอนพิเศษ: ยามว่างในแต่ละวัน (2)" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>ตอนพิเศษ: ยามว่างในแต่ละวัน (2)</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">2,506</span></li>
+                            <li class="date">
+                                
+                                2016.12.08
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="60" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_60_th312x232.jpg" data-chaptername="ตอนพิเศษ: ยามว่างในแต่ละวัน (1)" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/60" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_60_th312x232.jpg" alt="ตอนพิเศษ: ยามว่างในแต่ละวัน (1)" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>ตอนพิเศษ: ยามว่างในแต่ละวัน (1)</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">2,640</span></li>
+                            <li class="date">
+                                
+                                2016.12.05
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="59" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_59_th312x232.jpg" data-chaptername="Story 59 : ความรู้สึกที่ซ่อนงำ" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/59" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_59_th312x232.jpg" alt="Story 59 : ความรู้สึกที่ซ่อนงำ" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 59 : ความรู้สึกที่ซ่อนงำ</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">2,721</span></li>
+                            <li class="date">
+                                
+                                2016.12.01
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="58" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_58_th312x232.jpg" data-chaptername="Story 58 : ก่อนหมดคืนนี้" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/58" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_58_th312x232.jpg" alt="Story 58 : ก่อนหมดคืนนี้" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 58 : ก่อนหมดคืนนี้</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">2,954</span></li>
+                            <li class="date">
+                                
+                                2016.11.28
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="57" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_57_th312x232.jpg" data-chaptername="Story 57 : ยืนยันคำตอบ (2)" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/57" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_57_th312x232.jpg" alt="Story 57 : ยืนยันคำตอบ (2)" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 57 : ยืนยันคำตอบ (2)</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">2,869</span></li>
+                            <li class="date">
+                                
+                                2016.11.24
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="56" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_56_th312x232.jpg" data-chaptername="Story 56 : ยืนยันคำตอบ" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/56" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_56_th312x232.jpg" alt="Story 56 : ยืนยันคำตอบ" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 56 : ยืนยันคำตอบ</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">2,611</span></li>
+                            <li class="date">
+                                
+                                2016.11.21
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="55" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_55_th312x232.jpg" data-chaptername="Story 55 : สิ่งที่หาเจอ" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/55" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_55_th312x232.jpg" alt="Story 55 : สิ่งที่หาเจอ" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 55 : สิ่งที่หาเจอ</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">2,664</span></li>
+                            <li class="date">
+                                
+                                2016.11.17
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="54" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_54_th312x232.jpg" data-chaptername="Story 54 : หาคำตอบ (5)" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/54" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_54_th312x232.jpg" alt="Story 54 : หาคำตอบ (5)" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 54 : หาคำตอบ (5)</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">2,495</span></li>
+                            <li class="date">
+                                
+                                2016.11.14
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                            
+                                
+                            
+                        
+
+                        
+                            
+                                <li class="_chapterItem" data-id="53" data-coinhour="0" data-rentalticket="N" data-rentalticketperiod="" data-thumbnail ="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_53_th312x232.jpg" data-chaptername="Story 53 : หาคำตอบ (4)" data-author="">
+                            
+                            
+                        
+
+                        
+                        <input type="hidden" class="rental_info"/>
+                        
+                            
+                            
+                                <a href="/titles/73/chapters/53" class="link N=a:title.list,i=73">
+                                    <div class="thmb normal">
+                                        <img src="http://comicothimg.gslb.toastoven.net/comico/img/up/r01/73_53_th312x232.jpg" alt="Story 53 : หาคำตอบ (4)" width="113px" height="84px"/>
+                                        
+                                        <span class="line"></span>
+                                    </div>
+                                    <span class="tit">
+                                        <span>Story 53 : หาคำตอบ (4)</span>
+                                        <br>
+                                    </span>
+                                    <span class="aln"></span>
+                                </a>
+                            
+                        
+
+                        <ul class="info">
+                            <li class="love"><span class="btnlove sp">ถูกใจ</span> <span
+                                    class="aln">2,665</span></li>
+                            <li class="date">
+                                
+                                2016.11.10
+                            </li>
+                            
+                                
+                                    <li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+                                
+                                
+                                
+                                
+                                
+                            
+                        </ul>
+                        </li>
+                    
+
+                </ul>
+                <!-- 페이징 -->
+                <div class="paging">
+                    <a href="#" class="bn pre_end sp">ครั้งแรก</a>
+                    <a href="#" class="bn pre sp">ก่อนหน้านี้</a>
+                    <a href="#" class="bn next sp">ต่อไป</a>
+                    <a href="#" class="bn next_end sp">จบ</a>
+                </div>
+            </div>
+            <!-- //content -->
+            
+
+
+<!-- footer -->
+
+<div class="dimmed" style="display: none"></div>
+<div class="layer_wrap"
+	 style="position: fixed; left: 0; top: 0; right: 0; bottom: 0; width: 100%; height: 100%; z-index: 101; display: none;">
+</div>
+<div class="layer_collection" style="display: none;">
+	<!-- Pop-up style 1 -->
+	<div class="lypop _buyItem" style="display: none">
+		<div class="left-area">
+			<img id = "imageTitle" src="" onerror="this.onerror = null; this.src='/resources/img/no-image-box.png'" width="150px">
+			<div style="margin-left: 10px;">
+				<h1 class="tit" id ="titleName">ยืนยันการซื้อ</h1>
+			</div>
+		</div>
+		<div class="btn_group right-area"> <!-- TODO: Markup Change Request  -->
+			<ul id="item_list">
+			</ul>
+			<div class="noted-price">* ราคาต่อ 1 ตอน</div>
+		</div>
+
+		<button type="button" class="btn_cls">
+			<span class="sp_pop">ปิด</span>
+		</button>
+	</div>
+	<!-- //Pop-up style 1 -->
+<!-- BACKUP CHANE BADGE // THANH
+	<div class="lypop _changeBadge" style="display: none">
+		<div class="lypop_ct">
+			<div class="lypop_head">
+				<h1 class="tit">칭호&#47;배지 변경</h1>
+			</div>
+			<p class="txt">
+				<em class="badge"><img src="http://comico.toastoven.net/comico/img/badge/first_join.png" width="80px" height="80px"
+					alt="Badge 80x80"/></em>칭호/배지를 [<span>댓글-오덕</span>]으로<br>변경하시겠습니까?
+			</p>
+		</div>
+		<div class="lypop_ft">
+			<a href="#" class="btn btntype N=a:badge.change">ยืนยัน</a>
+		</div>
+		<button type="button" class="btn_cls">
+			<span class="sp_pop">ปิด</span>
+		</button>
+	</div>
+-->
+        <div class="lypop _changeEmoticon" style="display: none">
+		<div class="lypop_ct">
+			<div class="lypop_head">
+                            <h1 class="tit">เปลี่ยนรูปประจำตัว</h1>
+			</div>
+                        <div class="emo-list">
+                            
+                        </div>
+		</div>
+		<div class="lypop_ft">
+			<a href="#" class="btn btntype N=a:badge.change">ยืนยัน</a>
+		</div>
+		<button type="button" class="btn_cls">
+			<span class="sp_pop">ปิด</span>
+		</button>
+	</div>
+	<div class="lypop3 _showDeviceList" style="display: none">
+		<div class="lypop_ct">
+			<div class="lypop_head">
+				<h1 class="tit">ยืนยันอุปกรณ์</h1>
+			</div>
+			<div class="oschk">
+				<ul>
+					<li><span class="aln">ไม่มีอุปกรณ์ที่ลงทะเบียน</span> <span class="osaln"></span></li>
+					<li><span class="aln">ไม่มีอุปกรณ์ที่ลงทะเบียน</span> <span class="osaln"></span></li>
+					<li><span class="aln">ไม่มีอุปกรณ์ที่ลงทะเบียน</span> <span class="osaln"></span></li>
+				</ul>
+				<p>
+					หนึ่ง ID สามารถลงทะเบียนอุปกรณ์ได้ 3 เครื่อง<br>การจัดการอุปกรณ์จะสามารถทำได้ใน comico App
+				</p>
+			</div>
+		</div>
+		<div class="lypop_ft">
+			<a href="#" class="btn btntype">ยืนยัน</a>
+		</div>
+		<button type="button" class="btn_cls">
+			<span class="sp_pop">ปิด</span>
+		</button>
+	</div>
+
+
+	<!-- 팝업스타일 2 -->
+	<div class="lypop2 _chargePoint" style="display: none">
+		<div class="lypop_ct">
+			<div class="lypop_head">
+				<h1 class="tit">
+					ได้ให้<em> 32 Point</em>เรียบร้อยแล้ว
+				</h1>
+			</div>
+			<p class="txt">
+                ถ้าหากท่านล็อกอินจะพบกับการอ่านอีบุ๊คที่แสนสะดวกสบาย<br> เช่น ติดตาม ประวัติการอ่าน<br> ขอเชิญพบกับความสนุกกับอีเวนต์ที่หลากหลาย
+			</p>
+			<div class="lypop_ft">
+				<a href="#" class="btn btntype">ล็อกอิน</a><a href="#"
+					class="btn btntype2">สมัครสมาชิก</a>
+			</div>
+		</div>
+		<button type="button" class="btn_cls">
+			<span class="sp_pop">ปิด</span>
+		</button>
+	</div>
+
+
+	<div class="lypop2 _requireLogin" style="display: none">
+		<div class="lypop_ct">
+			<div class="lypop_head">
+				<h1 class="tit">
+					กรุณา<em>ล็อกอิน</em>
+				</h1>
+			</div>
+			<p class="txt">
+                ถ้าหากท่านล็อกอินจะพบกับการอ่านอีบุ๊คที่แสนสะดวกสบาย<br> เช่น ติดตาม ประวัติการอ่าน<br> ขอเชิญพบกับความสนุกกับอีเวนต์ที่หลากหลาย
+			</p>
+			<div class="lypop_ft">
+				<a href="#" class="btn btntype">ล็อกอิน</a>
+                <a href="#" class="btn btntype2">สมัครสมาชิก</a>
+			</div>
+		</div>
+		<button type="button" class="btn_cls">
+			<span class="sp_pop">ปิด</span>
+		</button>
+	</div>
+	<!-- //팝업스타일 2 -->
+	<div class="lypop2 _confirmBuyCoin" style="display: none">
+		<div class="lypop_ct">
+			<div class="lypop_head">
+				<h1 class="tit">
+					คุณต้องการใช้  เหรียญเพื่อซื้อแพ็คเกจนี้ ?
+				</h1>
+			</div>
+			<div class="lypop_ft">
+				<a href="#" class="btn btntype btn_yes">ใช่</a>
+				<a href="#" class="btn btntype2 btnClose">ไม่ใช่</a>
+			</div>
+		</div>
+		<button type="button" class="btn_cls">
+			<span class="sp_pop">ปิด</span>
+		</button>
+	</div>
+	<div class="lypop2 _confirmRentCoin" style="display: none">
+		<div class="lypop_ct">
+			<div class="lypop_head">
+				<h1 class="tit">
+					คุณต้องการใช้  เหรียญเพื่อเช่าแพ็คเกจนี้ ?
+				</h1>
+			</div>
+			<div class="lypop_ft">
+				<a href="#" class="btn btntype btn_yes">ใช่</a>
+				<a href="#" class="btn btntype2 btnClose">ไม่ใช่</a>
+			</div>
+		</div>
+		<button type="button" class="btn_cls">
+			<span class="sp_pop">ปิด</span>
+		</button>
+	</div>
+	<div class="lypop2 _confirmAlreadyPurchase" style="display: none">
+		<div class="lypop_ct">
+			<div class="lypop_head">
+				<h1 class="tit">
+					คุณเคยซื้อหรือเช่าของบางอย่างในแพ็คเกจนี้แล้ว คุณจะดำเนินการต่อหรือไม่?
+				</h1>
+			</div>
+			<div class="lypop_ft">
+				<a href="#" class="btn btntype btn_yes">ใช่</a>
+				<a href="#" class="btn btntype2 btnClose">ไม่ใช่</a>
+			</div>
+		</div>
+		<button type="button" class="btn_cls">
+			<span class="sp_pop">ปิด</span>
+		</button>
+	</div>
+	<div class="lypop2 _alertPopup" style="display: none">
+		<div class="lypop_ct">
+			<div class="lypop_head">
+				<h1 class="tit" style="display: none">
+
+				</h1>
+			</div>
+			<p class="txt" style="display: none">
+			</p>
+			<div class="lypop_ft">
+				<a href="#" class="btn btntype2 btn_ok">ใช่</a>
+			</div>
+		</div>
+		<button type="button" class="btn_cls">
+			<span class="sp_pop">ปิด</span>
+		</button>
+	</div>
+	<div class="lypop2 _failPaymentCoinNotEnough" style="display: none">
+		<div class="lypop_ct">
+			<div class="lypop_head">
+				<h1 class="tit">
+					คุณมี Coin ไม่เพียงพอ
+				</h1>
+			</div>
+			<p class="txt">
+				คุณมี Coin ไม่พอ กรุณาเติม Coin
+			</p>
+			<div class="lypop_ft">
+				<a href="#" class="btn btntype btn_yes">เติม Coin</a>
+				<a href="#" class="btn btntype2 btnClose">ไม่ใช่</a>
+			</div>
+		</div>
+		<button type="button" class="btn_cls">
+			<span class="sp_pop">ปิด</span>
+		</button>
+	</div>
+	<div class="lypop2 _loginPopup" style="display: none">
+		<div class="lypop_ct">
+			<div class="lypop_head">
+				<h1 class="tit">
+				</h1>
+			</div>
+			<div class="txt">
+                <img class="social_comico_bg" src="/resources/img/comico_img.png">
+			</div>
+            <div class="txt login_text">
+                <h3>ต้องล็อกอินก่อน</h3>ถ้าหากล็อกอินท่านจะได้เพลินเพลินไปกับ<br/>ผลงานการ์ตูนที่สนุกสนานจากนักเขียนชื่อดัง<br/>และสามารถแสดงความคิดเห็น<br/>ของท่านแก่นักเขียนได้
+            </div>
+			<div class="lypop_ft social_form">
+				<button class="btn social-btn fb-login-btn"></button>
+				<button class="btn social-btn gg-login-btn"></button>
+                <button class="btn social-btn tw-login-btn"></button>
+			</div>
+            <div class="lypop_ft">
+                <a href="#" class="btn comico_btn">Payco ล็อกอิน / สมัครสมาชิกฟรี</a>
+            </div>
+		</div>
+		<button type="button" class="btn_cls">
+			<span class="sp_pop">ปิด</span>
+		</button>
+	</div>
+
+	<!-- Pop-up style 3-->
+	<div class="lypop3 _publishSerially" style="display: none">
+
+		<button type="button" class="btn_cls">
+			<span class="sp_pop">ปิด</span>
+		</button>
+	</div>
+
+	<div class="lypop3 _socialCS" style="display: none">
+		<div class="lypop_ct">
+			<div class="lypop_head">
+				<h1 class="tit">ขออภัยในความไม่สะดวก</h1>
+			</div>
+			<p class="txt v2" style="font-size: 14px; font-weight: bold">
+				สามารถส่งอีเมล์สอบถามเกี่ยวกับการใช้บริการของ comico <br/>ได้ที่  comicoth@nhnent.com
+			</p>
+		</div>
+		<div class="lypop_ft">
+			<a href="#" class="btn btntype">ยืนยัน</a>
+		</div>
+		<button type="button" class="btn_cls">
+			<span class="sp_pop">ปิด</span>
+		</button>
+	</div>
+
+	<div class="lypop2 _contest ly325" style="display: none">
+		<!-- This hack for ie 8 only -->
+		<!--[if IE 8]>
+		<style>
+			.contest_download_btn {
+				background: none !important;
+				top: 80%;
+				left: 80px;
+				width: 190px;
+				height: 78px;
+				position: absolute;
+				background-size: 190px 78px;
+				filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/resources/img/contest_download_btn.png', sizingMethod='scale');
+				-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/resources/img/contest_download_btn.png', sizingMethod='scale')";
+			}
+		</style>
+		<![endif]-->
+
+		<img src="http://comicothimg.gslb.toastoven.net/comico/img/up/banner/marketing/cnbc_pc.jpg" class="contest_img"/>
+		<button class="contest_download_btn"></button>
+		<button type="button" class="btn_cls">
+			<span class="sp_pop">ปิด</span>
+		</button>
+		<div class="contest_btn">
+			<button class="contest_no_show_btn"></button>
+			<label class="contest_no_show_lbl" for="contest_no_show_chk">ไม่แสดงข้อความนี้ภายในวันนี้</label>
+			<input type="checkbox" class="contest_no_show_chk" id="contest_no_show_chk"/>
+		</div>
+	</div>
+
+	<div class="lypop2 _popup155 ly325" style="display: none">
+		<!-- This hack for ie 8 only -->
+		<!--[if IE 8]>
+		<style>
+			.popup155_btn {
+				background: none !important;
+				top: 80%;
+				left: 80px;
+				width: 190px;
+				height: 78px;
+				position: absolute;
+				background-size: 190px 62px;
+
+			}
+		</style>
+		<![endif]-->
+		
+		<button class="popup155_btn"></button>
+		<button type="button" class="btn_cls">
+			<span class="sp_pop">ปิด</span>
+		</button>
+		<div class="contest_btn">
+			<button class="contest_no_show_btn"></button>
+			<label class="contest_no_show_lbl" for="contest_no_show_chk">ไม่แสดงข้อความนี้ภายในวันนี้</label>
+			<input type="checkbox" class="contest_no_show_chk" id="contest_no_show_chk"/>
+		</div>
+	</div>
+
+	<!-- 신고하기 -->
+	<div class="pop_rep _reportComment" style="display: none;">
+			<div class="top">
+				<h3>แจ้งลบ</h3>
+				<button type="button" class="btn_cls">
+					<span class="sp">ปิด</span>
+				</button>
+			</div>
+
+			<div class="cont">
+				<div class="sec_1">
+					<p>เพื่อรักษาบรรยากาศในการอ่านการ์ตูน หากพบเห็นคอมเมนต์ใดไม่เหมาะสม กรุณาแจ้งทีมงาน</p>
+					<p>ผู้ใช้ที่เขียนคอมเมนต์ไม่เหมาะสมจะโดนแบนในระยะเวลาที่กำหนด</p>
+				</div>
+				<div class="sec_2">
+					<ul>
+						<li>
+							<span>ผู้สร้างคอนเทนต์</span>
+							<span class="_author">ฮงกิลดง</span>
+						</li>
+						<li>
+							<span>เนื้อหา</span>
+							<span class="ellipsis _text">เนื้อหา เนื้อหา เนื้อหา เนื้อหา เนื้อหา เนื้อหา</span>
+						</li>
+					</ul>
+				</div>
+				<div class="sec_3">
+					<span>เหตุผลที่แจ้งลบ</span>
+					<ul>
+						<li><input type="radio" id="NT010" name="reason"><label for="NT010">การใส่ร้าย การด่าหรือการใช้คำพูดรุนแรง</label></li>
+						<li><input type="radio" id="NT020" name="reason"><label for="NT020">การโฆษณาหรือแนะนำสินค้า</label></li>
+						<li><input type="radio" id="NT030" name="reason"><label for="NT030">การเปิดเผยข้อมูลส่วนตัวของบุคคลอื่น</label></li>
+						
+						<li>
+							<input type="radio" id="NT099" class="etc" name="reason"><label for="NT099">อื่นๆ</label>
+						</li>
+						<li class="etc_txt">
+							<textarea id="content_etc"></textarea>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="bottom">
+				<a href="#" class="btnreport">ยืนยัน</a>
+				<a href="#" class="btncancel">ยกเลิก</a>
+			</div>
+		</div>
+
+
+
+	<!-- <div class="lypop3 _reportComment" style="display: none">
+		<div class="lypop_ct">
+			<div class="lypop_head">
+				<h1 class="tit">신고하기</h1>
+			</div>
+			<div class="rptbx">
+				<p class="ntc">
+					건전한 만화생활을 위해 부적절한 댓글을 보시면 알려주세요.<br>부적절한 댓글 등록 유저는 일정기간 동안 댓글
+					입력이 제한될 수 있습니다.
+				</p>
+				<ul class="info">
+					<li><strong>작성자</strong><span class="_author"></span></li>
+					<li><strong>내용</strong><span class="_text"></span></li>
+				</ul>
+				<ul class="info lat">
+					<li><strong>신고 사유</strong>
+						<div class="chkbx">
+							<input type="radio" name="reason" id="rsn1" class="iptchk">
+							<label for="rsn1">근거없는 비방, 폭언, 욕설</label>
+						</div>
+						<div class="chkbx">
+							<input type="radio" name="reason" id="rsn2" class="iptchk">
+							<label for="rsn2">광고, 알선</label>
+						</div>
+						<div class="chkbx">
+							<input type="radio" name="reason" id="rsn3" class="iptchk">
+							<label for="rsn3">개인정보 노출</label>
+						</div>
+						<div class="chkbx">
+							<input type="radio" name="reason" id="rsn4" class="iptchk">
+							<label for="rsn4">음란, 외설</label>
+						</div>
+						<div class="chkbx etc on">
+							<input type="radio" name="reason" id="rsn5" class="iptchk">
+							<label for="rsn5">기타</label> <span class="ipttx"><input
+								type="text" id="rsntx"> <label for="rsntx" class="blind">기타
+									사유</label></span>
+						</div></li>
+				</ul>
+			</div>
+		</div>
+		<div class="lypop_ft">
+			<a href="#" class="btn btntype">확인</a>
+		</div>
+		<button type="button" class="btn_cls">
+			<span class="sp_pop">닫기</span>
+		</button>
+	</div> -->
+
+	<div class="lypop3 v2 _blockComment" style="display: none">
+		<div class="lypop_ct">
+			<div class="lypop_head">
+				<h1 class="tit">ซ่อนคอมเมนต์</h1>
+			</div>
+			<p class="txt v2">
+                            <strong class="tit">ต่อไปจะไม่มีการแสดงคอมเมนต์ของผู้ใช้คนนี้อีก </strong> ท่านสามารถแจ้งซ่อนคอมเมนต์ได้ถึง 100 คน<br>หากเกินจำนวน 100 คน ระบบก็จะปลดล็อกของคนแรกที่ท่านแจ้งก่อน
+			</p>
+		</div>
+		<div class="lypop_ft">
+			<a href="#" class="btn btntype">ซ่อนคอมเมนต์</a><a href="#"
+				class="btn btntype2">ยกเลิก</a>
+		</div>
+		<button type="button" class="btn_cls">
+			<span class="sp_pop">ปิด</span>
+		</button>
+	</div>
+
+	<div class="lypop3 v2 _deleteFavorite" style="display: none">
+		<div class="lypop_ct">
+			<div class="lypop_head">
+				<h1 class="tit">ลบรายการโปรด</h1>
+			</div>
+			<p class="txt v2">
+				<strong class="tit">ต้องการลบรายการโปรดใช่หรือไม่</strong>
+			</p>
+		</div>
+		<div class="lypop_ft">
+			<a href="#" class="btn btntype">ยืนยัน</a>
+			<a href="#" class="btn btntype2">ยกเลิก</a>
+		</div>
+		<button type="button" class="btn_cls">
+			<span class="sp_pop">ปิด</span>
+		</button>
+	</div>
+
+	<div class="lypop3 v2 _failBuyItemForCoin" style="display: none">
+		<div class="lypop_ct">
+			<div class="lypop_head">
+				<h1 class="tit">การซื้อล้มเหลว</h1>
+			</div>
+			<p class="txt v2">
+				<strong class="tit">จำนวน Coin ไม่เพียงพอ</strong>
+                                หากซื้อโดย Coin จะไม่มีกำหนดระยะเวลา เก็บไว้ได้ตลอดไปหรือสามารถยืมได้  7 วัน อีกทั้งสามารถอ่านได้ตลอดเวลาจากชั้นหนังสือและจะให้โบนัส Coin, Point ตามจำนวนที่เติม !<br><br>ไปหน้าเติม Coin ใช่หรือไม่?
+			</p>
+		</div>
+		<div class="lypop_ft">
+			<a href="/payment#coin" class="btn btntype">ยืนยัน</a><a href="#"
+				class="btn btntype2">ยกเลิก</a>
+		</div>
+		<button type="button" class="btn_cls">
+			<span class="sp_pop">ปิด</span>
+		</button>
+	</div>
+	<div class="lypop3 v2 _failBuyItemForPoint" style="display: none">
+		<div class="lypop_ct">
+			<div class="lypop_head">
+				<h1 class="tit">การซื้อล้มเหลว</h1>
+			</div>
+			<p class="txt v2">
+				<strong class="tit">ต้องการ Point อีก</strong>
+                                포인트가 모자르지만 걱정마세요. 매일매일 20포인트까지 자동회복해 드리고 코미코 퀘스트를 통해서 공짜로 얻으실수 있어요. 또 매일 새로 등록되는 만화도 해당 연재요일에 무료로 제공되니 절대 놓치지 마세요!<br><br>포인트 획득안내 페이지로 이동하시겠습니까?
+			</p>
+		</div>
+		<div class="lypop_ft">
+			<a href="/payment#point" class="btn btntype">ยืนยัน</a><a href="#"
+				class="btn btntype2">ยกเลิก</a>
+		</div>
+		<button type="button" class="btn_cls">
+			<span class="sp_pop">ปิด</span>
+		</button>
+	</div>
+
+	<div class="lypop3 _restrictComment" style="display: none">
+		<div class="lypop_ct">
+			<div class="lypop_head">
+				<h1 class="tit">ข้อกำหนดในการเขียนคอมเมนต์</h1>
+			</div>
+			<p class="txt">
+                            รับเรื่องการแจ้งลบข้อความที่ไม่เหมาะสมและยืนยัน<br> ไม่สามารถใส่ข้อความคอมเมนต์ได้ชั่วคราว<br> ขออภัยด้วย<em class="date"> ระยะเวลากำหนดจนถึง 2014.08.10</em>
+			</p>
+		</div>
+		<div class="lypop_ft">
+			<a href="#" class="btn btntype2">ยืนยัน</a>
+		</div>
+		<button type="button" class="btn_cls">
+			<span class="sp_pop">ปิด</span>
+		</button>
+	</div>
+
+	<!-- 팝업스타일 2 -->
+	<div class="lypop2 _successRegisterCoupon" style="display: none">
+		<div class="lypop_ct">
+			<div class="lypop_head">
+				<h1 class="tit">
+					ได้รับ<em> Point</em>
+				</h1>
+			</div>
+
+			<div class="lypop_ft">
+				<a href="#" class="btn btntype">ยืนยัน</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="lypop2 _simpleLayer" style="display: none">
+		<div class="lypop_ct">
+			<div class="lypop_head">
+				<h1 class="tit">
+					<span>ได้รับแล้ว</span>
+				</h1>
+			</div>
+
+			<div class="lypop_ft">
+				<a href="#" class="btn btntype">ยืนยัน</a>
+			</div>
+		</div>
+		<button type="button" class="btn_cls">
+			<span class="sp_pop">ปิด</span>
+		</button>
+	</div>
+
+	<div class="lypop2 _failRegisterCoupon" style="display: none">
+		<div class="lypop_ct">
+			<div class="lypop_head">
+				<h1 class="tit">
+					<em>กำลังตรวจสอบระบบคูปอง</em>
+				</h1>
+			</div>
+			<p class="txt">
+				กรณีมีข้อสงสัยเกี่ยวกับคูปอง กรุณาไปที่สอบถาม/ช่วยเหลือ
+			</p>
+			<div class="lypop_ft">
+				<a href="#" class="btn btntype">ยืนยัน</a>
+				<a href="#" class="btn btntype2">สอบถาม/ช่วยเหลือ</a>
+			</div>
+		</div>
+		<button type="button" class="btn_cls">
+			<span class="sp_pop">ปิด</span>
+		</button>
+	</div>
+
+	<div class="lypop3 _favoriteTitlePushOn" style="display: none">
+		<div class="lypop_ct">
+			<div class="lypop_head">
+				<h1 class="tit">เปลี่ยนการแจ้งเตือนคอนเทนต์โปรด</h1>
+			</div>
+			<p class="txt">
+				เพิ่มการแจ้งเตือนคอนเทนต์โปรด
+			</p>
+		</div>
+		<div class="lypop_ft">
+			<a href="#" class="btn btntype2">ยืนยัน</a>
+		</div>
+		<button type="button" class="btn_cls">
+			<span class="sp_pop">ปิด</span>
+		</button>
+	</div>
+	<div class="lypop3 _favoriteTitlePushOff" style="display: none">
+		<div class="lypop_ct">
+			<div class="lypop_head">
+				<h1 class="tit">เปลี่ยนการแจ้งเตือนคอนเทนต์โปรด</h1>
+			</div>
+			<p class="txt">
+				ยกเลิกแจ้งเตือนคอนเทนต์โปรด
+			</p>
+		</div>
+		<div class="lypop_ft">
+			<a href="#" class="btn btntype2">ยืนยัน</a>
+		</div>
+		<button type="button" class="btn_cls">
+			<span class="sp_pop">ปิด</span>
+		</button>
+	</div>
+
+	<div class="lypop2 _requireCertification" style="display: none">
+		<div class="lypop_ct">
+			<div class="lypop_head">
+				<h1 class="tit">ในการเขียนคอมเมนต์ต้องการ<em>การยืนยันตัวตน</em>
+				</h1>
+			</div>
+			<p class="txt">
+                            ต้องการยืนยันตัวตนหรือไม่<br>(แก้ไขข้อมูลของสมาชิก-ยืนยันตัวตน)
+			</p>
+			<div class="lypop_ft">
+				<a href="#" class="btn btntype">ยกเลิก</a><a href="#"
+					class="btn btntype2">การยืนยัน</a>
+			</div>
+		</div>
+		<button type="button" class="btn_cls">
+			<span class="sp_pop">ปิด</span>
+		</button>
+	</div>
+
+	<div class="lypop3 publish _publishAlert" style="display: none">
+		<div class="lypop_ct">
+			<div class="lypop_head">
+				<h1 class="tit thumbnailTitle"></h1>
+			</div>
+			<p class="txt">
+				<span></span>
+			</p>
+		</div>
+		<div class="lypop_ft" style="padding-bottom: 20px">
+			<a href="javascript:void(0)" class="btn btntype btnOk">ยืนยัน</a>
+		</div>
+		<button type="button" class="btn_cls">
+			<span class="sp_pop">ปิด</span>
+		</button>
+	</div>
+	<div class="lypop3 publish _publishConfirm" style="display: none">
+		<div class="lypop_ct">
+			<div class="lypop_head">
+				<h1 class="tit thumbnailTitle"></h1>
+			</div>
+			<p class="txt" >
+				<span></span>
+			</p>
+		</div>
+		<div class="lypop_ft">
+			<a href="javascript:void(0)" class="btn btntype btnConfirm">ยืนยัน</a>
+			<a href="javascript:void(0)" class="btn btntype2 btnClose">Close</a>
+		</div>
+		<button type="button" class="btn_cls">
+			<span class="sp_pop">ปิด</span>
+		</button>
+	</div>
+
+	<div class="lypop2 _failGetPresent" style="display: none">
+		<div class="lypop_ct">
+			<div class="lypop_head">
+				<h1 class="tit">
+					<em>รับ Pass ล้มเหลว</em>
+				</h1>
+			</div>
+			<p class="txt">ระบบผิดพลาด</p>
+			<div class="lypop_ft">
+				<a href="javascript:void(0)" class="btn btntype2 btnClose">Close</a>
+			</div>
+		</div>
+		<button type="button" class="btn_cls">
+			<span class="sp_pop">ปิด</span>
+		</button>
+	</div>
+	<div class="lypop3 _suggest" style="display: none">
+		<div class="lypop_ct">
+			<div class="lypop_head">
+				<h1 class="tit">
+					<em>กล่องแสดงความคิดเห็น</em>
+				</h1>
+			</div>
+			<div class="txt">
+				<p class="des">กรุณาใส่ความคิดเห็นเกี่ยวกับ comico ของคุณค่ะ</p>
+				<textarea class="suggestText"></textarea>
+				<p class="note">※ ความคิดเห็นของคุณจะถูกนำไปปรับปรุงและพัฒนาระบบของ comico</p>
+			</div>
+			<div class="lypop_ft">
+				<a href="javascript:void(0)" class="btn btntype suggestSubmit">ส่งข้อความ</a>
+			</div>
+
+		</div>
+		<button type="button" class="btn_cls">
+			<span class="sp_pop">ปิด</span>
+		</button>
+	</div>
+	<div class="lypop2 _success" style="display: none">
+		<div class="lypop_ct">
+			<div class="txt">
+			<p class="des">ขอบคุณสำหรับความคิดเห็นค่ะ</p>
+				<img src="/resources/img/layout/icon/success_suggest.png">
+				</div>
+			<div class="lypop_ft">
+				<a href="javascript:void(0)" class="btn btntype btnClose">กลับไป comico</a>
+			</div>
+		</div>
+		<button type="button" class="btn_cls">
+			<span class="sp_pop">กลับไป comico</span>
+		</button>
+	</div>
+	<div class="lypop2 receiveAllGift" style="display: none">
+		<div class="lypop_ct">
+			<p class="txt">
+
+				<img src="/resources/img/gift_image_popup.png" width="150" height="150">
+			<div style="text-align: center; margin-top: 15px;">
+				<b style="font-size: 16px">คุณได้รับ Gift PASS</b>
+				<p style="font-size: 13px;color: darkgray;">ต้องการกดรับหรือไม่?</p>
+		</div>
+			</p>
+			<div class="lypop_ft">
+				<a href="javascript:void(0);" class="btn btntype">ตกลง</a>
+				<a href="javascript:void(0);" class="btn btntype2">ยกเลิก</a>
+			</div>
+		</div>
+		<button type="button" class="btn_cls">
+			<span class="sp_pop">ปิด</span>
+		</button>
+	</div>
+
+	<div class="lypop2 helpPopup" style="display: none; border-radius:10px;">
+		<div class="lypop_ct">
+			<div class="lypop_head" style="border-bottom: 4px solid red;">
+				<h1 class="tit" style="margin-top: -30px;">comico PASS</h1>
+			</div>
+			<div style="margin: 15px 25px 0 25px;">
+				<strong style="font-size: 15px; font-weight: bold;">PASS (ธรรมดา)</strong>
+				<span style="color: #888888;">
+					<p>ใช้สําหรับอ่านการ์ตูนในแต่ละตอนโดยหลังจากใช้ไปแล้วจะได้รับใบใหม่ตามระยะเวลาที่แอพฯกําห</p>
+				</span>
+			</div>
+			<div style="padding-bottom: 10px; margin: 15px 35px 0 35px; border-bottom: 2px solid #bbbbbb;"></div>
+			<div style="margin: 15px 25px 0 25px;">
+				<strong style="font-size: 15px; font-weight: bold;">Gift PASS (ของขวัญ)</strong>
+				<span style="color: #888888;">
+					<p>Pass พิเศษที่ได้รับจากระบบโดยสามารถใช้อ่านการ์ตูนได้ตามรายละเอียดของ PASS นั้นๆ</p>
+				</span>
+			</div>
+			<div style="padding-bottom: 10px; margin: 15px 35px 0 35px; border-bottom: 2px solid #bbbbbb;"></div>
+			<div style="margin: 15px 25px 0 25px;">
+				<span style="color: #888888;">
+					<p>※ Pass แต่ละใบจะมีวันหมดอายุที่ต่างกัน ตามที่แอพฯกําหนด</p>
+					<p>※ ถ้าหากมี Pass มากกว่า 1 ใบ ระบบจะใช้ Gift Pass (ของขวัญ)ก่อน Pass (ธรรมดา) โดยจะเลือกใช้ตาม</p>
+					<p>Pass ที่วันหมดอายุก่อน-หลังตามลําด</p>
+				</span>
+			</div>
+		</div>
+
+	</span>
+	<button type="button" class="btn_cls">
+		<span class="sp_pop">ปิด</span>
+	</button>
+	</div>
+</div>
+
+        </div>
+    </div>
+
+    <div class="buy_box" style="display: none;">
+        <div class="buy_inner">
+            <span class="choose">총 <em>1</em>화 선택</span>
+            <div class="btn_wrap">
+                <button type="button" class="btn_orange is_enabled gift_buy" style="display: inline-block;">
+                    <span class="coin_bx">대여권 <span class="gift_count">1</span>개 사용하기</span>
+                </button>
+                <span class="btn_orange is_disabled gift_buy" style="display: none;">
+				<span class="coin_bx">대여권 사용하기</span>
+			</span>
+                <button type="button" class="btn_violet ticket_buy" style="display: none;">
+                    <span class="coin_bx">자유이용권 구매하기</span>
+                </button>
+                <button type="button" class="btn_blue coin_buy">
+				<span class="coin_bx">소장하기
+					<span class="coin sp"></span><span class="coin_value">200</span>
+				</span>
+                </button>
+                <button type="button" class="btn_blue coin_rent">
+				<span class="coin_bx"><span class="rent_hour">3일 </span>대여
+					<span class="coin sp"></span><span class="rent_value">100</span>
+				</span>
+                </button>
+                <button type="button" class="btn_blue btn_cancel">취소</button>
+            </div>
+        </div>
+    </div>
+
+    <!--알림판 -->
+    
+
+
+	<div class="alarm hide">
+		<div class="alarmwrap">
+			<ul class="alarmenu" style="display:none">
+			<li class="_btnbook"><a href="#" class="btnbook N=a:noti.favorite_tab"><span class="sp">ติดตาม</span></a><span class="num"><em class="_favoriteCount"></em></span></li>
+			<li class="_btnhis"><a href="#" class="btnhis N=a:noti.history_tab"><span class="sp"></span><span class="text">ประวัติการอ่าน</span></a><span class="num"></span></li>
+				<li class="_btnrent"><a href="#" class="btnrent N=a:noti.purchased_tab"><span class="sp">ประวัติการอ่าน</span></a><span class="num"><em class="_rentFinishCount"></em></span></li>
+			</ul>
+			<div class="alarly">
+				<h2>คอนเทนต์โปรด<br>อัพเดท</h2>
+				<!-- <h2>대여마감<br>임박 작품</h2> -->
+				<!-- <h2>내가 본 작품</h2> -->
+				<ul class="alr_lst">
+				</ul>
+			</div>	
+		</div>
+	</div>
+
+<script id="notificationFavoriteTemplate" type="text/x-jsrender">
+		{{if isRead == true}}<li class="finish" >{{else}}<li>{{/if}}
+		    {{if target =="WEBTOON"}}
+			<a href="/titles/{{:id}}" class="N=a:noti.favorite">
+			{{else target =="NOVEL"}}
+			<a href="/novel/titles/{{:id}}" class="N=a:noti.favorite">
+			{{/if}}
+				<dl>
+				<dt>
+					<span class="thmb">
+					<img src="{{:thumbnailUrl.titleMediumUrl}}" alt="{{:name}}" width="121px" height="83px"/>
+					<span class="icon up sp">NEW</span>
+					<span class="line"></span>
+					</span>
+					<em title="{{:name}}">{{:name}}</em>
+				</dt>
+				<dd class="ep" title="{{:author}}">{{:author}}</dd>
+				<dd class="date"><span class="up">UP</span> {{dateTime:updatedAt}}</dd>
+				</dl>
+			</a>
+		</li>	
+	</script>
+	<script id="notificationRentTemplate" type="text/x-jsrender">
+		<li {{if isRead == true }} class="finish" {{/if}}>
+		  {{if target =="WEBTOON"}}
+			<a href="/titles/{{:id}}" class="N=a:noti.purchased">
+				{{else target =="NOVEL"}}
+					<a href="/novel/titles/{{:id}}" class="N=a:noti.purchased">
+				{{/if}}
+				<dl>
+				<dt>
+					<span class="thmb">
+					<img src="{{:thumbnailUrl.titleMediumUrl}}" alt="{{:name}}" width="121px" height="83px"/>
+					<span class="line"></span>
+					</span>
+					<em title="{{:name}}">{{:name}}</em>
+				</dt>
+				<dd class="ep" title="{{:author}}">{{:author}}</dd>
+				<dd class="date"><span class="d_day">D-{{limitDay:rentEndAt}}</span> {{dateTime:rentEndAt}}</dd>
+				</dl>
+			</a>
+		</li>	
+	</script>
+	
+	<script id="notificationReadTemplate" type="text/x-jsrender">
+		<li class="finish">
+		 {{if _type =="_chapter"}}
+			<a href="/titles/{{:titleId}}/chapters/{{:id}}" class="N=a:noti.history">
+			{{else _type =="_novel"}}
+					<a href="/novel/titles/{{:titleId}}/chapters/{{:id}}" class="N=a:noti.history">
+				{{/if}}
+				<dl>
+				<dt>
+					<span class="thmb">
+					<img src="{{:thumbnailImageUrl}}" alt="{{:titleName}}" width="121px" height="83px"/>
+					<span class="line"></span>
+					</span>
+					<em title="{{:titleName}}">{{:titleName}}</em>
+				</dt>
+				<dd class="ep" title="{{:name}}">{{:name}}</dd>				
+				</dl>
+			</a>
+		</li>	
+	</script>
+	<script id="noResultTemplate" type="text/x-jsrender">
+		<li>
+		<dl>
+		<dt>
+		<span class="thmb">
+		<img src="/resources/img/temp/@nothmb_121x83.jpg" alt=""/>
+		<span class="line"></span>
+		</span>
+		</dt>
+		<dd></dd>
+		</dl>
+		</li>
+	</script>
+    <!--//알림판 -->
+    
+
+
+<!-- footer -->
+	<div id="footer">
+		<div class="footwrap">
+			
+			<ul class="copywrap">
+			<li><a href="http://www.nhnent.com/asia/th/index.nhn" target="_blank" class="N=a:fnb.company">เกี่ยวกับบริษัท</a></li>
+			<li><a href="/userAgreement" class="_serviceRule N=a:fnb.rules">เงื่อนไขและนโยบาย</a></li>
+			<li><a href="/privacyPolicy" class="_privacyPolicy N=a:fnb.rules">นโยบายความเป็นส่วนตัว</a></li>
+			<li><a href="/paycoPolicy" class="_paycoPolicy N=a:fnb.privacy">กฎข้อบังคับเกี่ยวกับสมาชิก</a></li>
+			<!--
+                        <li><a href="/notices" class="_notices N=a:fnb.notice">ประกาศ</a></li>
+                        -->
+			<li><a href="/support/faq" class="N=a:fnb.support">ช่วยเหลือ</a></li>
+			
+			</ul>
+			<address>ชื่อบริษัท : เอ็นเอชเอ็น (ไทยแลนด์) จำกัด
+			<br>ที่อยู่ : 689 อาคารภิรัช ทาวเวอร์แอ๊ดเอ็มควอเทียร์ ชั้น 31 ยูนิต 3101-2 ถ.สุขุมวิท แขวงคลองตันเหนือ เขตวัฒนา กรุงเทพฯ 10110
+                        <br>หมายเลขจดทะเบียนบริษัท 0105557166059         อีเมล์ติดต่อ : comico_th@toast.com
+                        <br>เบอร์ติดต่อ  +66 2261 3093​
+                        </address>
+
+                        <p class="copy">
+							<img src="/resources/img/layout/branding.png" />
+							<span>Copyright © <a href="http://www.nhnent.com" target="_blank">NHN (Thailand) Ltd.</a> All rights reserved.</span>
+						</p>
+			<ul class="footlink">
+				<li class="apl"><a href="http://redirect-analytics.toast.com/bridge.nhn?channel=709&path=6360" target="_blank"><img src="/resources/img/layout/btn_appstore_02.png" alt="App Store"/></a></li>
+				<li class="ggl"><a href="http://redirect-analytics.toast.com/bridge.nhn?channel=709&path=6359" target="_blank"><img src="/resources/img/layout/btn_googleplay_02.png" alt="Google Play"/></a></li>
+				<li class="face"><a href="https://www.facebook.com/pages/Comico-Thailand/340460499479033?fref=ts" target="_blank"><img src="/resources/img/layout/btn_facebook_02.png" alt="comico Facebook"/></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="loading" style="display: none">
+		<div class="loader1">
+			<i></i>
+			<i></i>
+		</div>
+	</div>
+
+<script type="text/javascript" src="/resources/js/lib/mac_sv110.js?201707100152"></script>
+    
+
+<script src="/asset/js/comico.lib.min.js?201707100152 "></script>
+<script src="/asset/js/comico.lib-ext.min.js?201707100152 "></script>
+
+<script src="/asset/js/comico.common.min.js?201707100152 "></script>
+<script>
+	var ccsrv = "cc.toast.com";
+	var nclk_evt = 3;
+	var oAdditionalInfo = {};
+	oAdditionalInfo["uid"] = "";
+	lcs_do(oAdditionalInfo);
+	nclk_do();
+    var bannerAds ={
+    };
+    
+    if(!$.isEmptyObject(bannerAds)){
+            comico.Layer.openBannerAds(bannerAds);
+    }
+
+</script>
+
+
+    <script id="chapterTemplate" type="text/x-jsrender">
+        {{if isRead == false }}
+         <li class="_chapterItem" data-thumbnail ="{{:thumbnailImageUrl}}" data-chaptername="{{:name}}" data-author="{{:author}}" data-coinhour="{{:~GetPriceInfo().coinRentPeriod}}" data-rentalticketperiod="{{:salePolicy.rentalticketperiod}}" data-id="{{:id}}"
+             {{if salePolicy.rentalticket == "Y"}}
+                    data-rentalticket= 'Y'
+                 {{else}}
+                    data-rentalticket= 'N'
+             {{/if}}
+         >
+        {{else}}
+         <li class="_chapterItem read" data-thumbnail ="{{:thumbnailImageUrl}}" data-chaptername="{{:name}}" data-author="{{:author}}" data-coinhour="{{:~GetPriceInfo().coinRentPeriod}}" data-rentalticketperiod="{{:salePolicy.rentalticketperiod}}" data-id="{{:id}}"
+            {{if salePolicy.rentalticket == "Y"}}
+                    data-rentalticket= 'Y'
+                 {{else}}
+                    data-rentalticket= 'N'
+            {{/if}}
+         >
+        {{/if}}
+
+
+		{{if salePolicy.isFree == false && purchaseInfo.isPurchased == false && purchaseInfo.isRented == false }}
+	    <a href="/titles/{{:titleId}}/chapters/{{:id}}"  class="link _reqPg  N=a:title.list,i={{:titleId}}">
+		<div class="thmb">
+			<img src="{{:thumbnailImageUrl}}" alt="{{:name}}" width="113px" height="84px"/>
+			{{if salePolicy.isInPackage == true }}
+			 <span class="icon pack">กำลังให้บริการแพ็คเกจ</span>
+			{{/if}}
+			 <span class="line"></span>
+			 <span class="bg"></span><span class="lock sp">ตอนที่ยังไม่ได้ซื้อ</span>
+		</div>
+		 <span class="tit">
+		 <span>{{:name}}</span>
+		 <br>
+		 {{if salePolicy.previewused == "Y"}}
+            <span class="lbl_preview">อ่านก่อนใคร</span>
+        {{/if}}
+        {{if salePolicy.rentalticket == "Y" && salePolicy.isFree == false}}
+            <span class="lbl_rentalticket">PASS</span>
+        {{/if}}
+
+
+		 </span>
+		 <span class="aln"></span>
+		</a>
+		{{else}}
+		<a href="/titles/{{:titleId}}/chapters/{{:id}}"  class="link  N=a:title.list,i={{:titleId}}">
+		<div class="thmb">
+			<img src="{{:thumbnailImageUrl}}" alt="{{:name}}" width="113px" height="84px"/>
+			{{if salePolicy.isInPackage == true }}
+			 <span class="icon pack">กำลังให้บริการแพ็คเกจ</span>
+			{{/if}}
+			 <span class="line"></span>	
+		</div>
+		 <span class="tit">
+		 <span>{{:name}}</span>
+		 <br>
+		 </span>
+		 <span class="aln"></span>
+		</a>
+		{{/if}}
+		 <ul class="info">
+			 <li class="love"><span class="btnlove sp">ถูกใจ</span> <span class="aln">{{:likeCount}}</span></li>
+			 <li class="date">{{date:openedAt}}</li>
+		{{if salePolicy.isUnlimitedFree == true }}
+			<li class="point v3"><span class="pcon">อ่านฟรี</span></li>
+        {{else salePolicy.isFree == true }}
+            <li class="point v5"><span class="pcon">อ่านฟรี<br>{{dateTime:salePolicy.freeEndAt}}จนถึง</span></li>
+		{{else purchaseInfo.isPurchased == true }}
+        <li class="point v2"><span class="pcon">ครอบครองอยู่</span></li>~
+		{{else purchaseInfo.isRented == true }}
+			 <li class="point v4"><span class="pcon">อ่านได้ถึง {{dateTimeNotYear:purchaseInfo.rentEndAt}}</span></li>
+		{{else ~GetPriceInfo().coinUsed == "Y" && ~GetPriceInfo().coinRentUsed == "Y" && ~GetPriceInfo().pointUsed == "Y" && salePolicy.isUnlimitedFree != true && purchaseInfo.isFree != true && purchaseInfo.isPurchased != true &&  purchaseInfo.isRented != true}}
+			<li class="point"> 
+				<button type="button" class="pcon">
+				<span class="pcoinin">
+					<span class="sp coin">Coin</span>
+					<span class="point_c"><span class="aln">{{:~GetPriceInfo().coin}}/{{:~GetPriceInfo().coinRent}}</span></span>
+					<!--
+                                        <span class="point_p"><span class="sp">Point</span> <span class="aln">{{:~GetPriceInfo().point}}</span></span>
+					-->
+                                        <span class="aln"></span>
+				</span>
+				</button>
+			</li>
+		{{else ~GetPriceInfo().coinUsed == "Y" && ~GetPriceInfo().coinRentUsed == "Y" && ~GetPriceInfo().pointUsed == "N" && salePolicy.isUnlimitedFree != true && purchaseInfo.isFree != true && purchaseInfo.isPurchased != true &&  purchaseInfo.isRented != true}}
+			<li class="point"> 
+				<button type="button" class="pcon">
+				<span class="pcoinin">
+					<span class="sp coin">Coin</span>
+					<span class="point_c"> <span class="aln">{{:~GetPriceInfo().coin}}/{{:~GetPriceInfo().coinRent}}</span></span>
+					<span class="aln"></span>
+				</span>
+				</button>
+			</li>
+		{{else ~GetPriceInfo().coinUsed == "Y" && ~GetPriceInfo().coinRentUsed == "N" && ~GetPriceInfo().pointUsed == "N" && salePolicy.isUnlimitedFree != true && purchaseInfo.isFree != true && purchaseInfo.isPurchased != true &&  purchaseInfo.isRented != true}}
+			<li class="point"> 
+				<button type="button" class="pcon">
+				<span class="pcoinin">
+				    <span class="sp coin">Coin</span>
+					<span class="point_c"> <span class="aln">{{:~GetPriceInfo().coin}}/-</span></span>
+					<span class="aln"></span>
+				</span>
+				</button>
+			</li>
+        {{else ~GetPriceInfo().coinUsed == "Y" && ~GetPriceInfo().coinRentUsed == "N" && ~GetPriceInfo().pointUsed == "Y" && salePolicy.isUnlimitedFree != true && purchaseInfo.isFree != true && purchaseInfo.isPurchased != true &&  purchaseInfo.isRented != true}}
+            <li class="point">
+                <button type="button" class="pcon">
+                <span class="pcoinin">
+                    <span class="sp coin">Coin</span>
+                    <span class="point_c"> <span class="aln">{{:~GetPriceInfo().coin}}/-</span></span>
+                    <span class="aln"></span>
+                </span>
+                </button>
+            </li>
+		{{else ~GetPriceInfo().coinUsed == "N" && ~GetPriceInfo().coinRentUsed == "N" && ~GetPriceInfo().pointUsed == "Y" && salePolicy.isUnlimitedFree != true && purchaseInfo.isFree != true && purchaseInfo.isPurchased != true &&  purchaseInfo.isRented != true}}
+			<li class="point"> 
+				<button type="button" class="pcon">
+				<span class="pcoinin">	
+                                <!--
+					<span class="point_p"><span class="sp coin">Point</span> <span class="aln">{{:~GetPriceInfo().point}}</span></span>
+				-->
+                                    <span class="aln"></span>
+				</span>
+				</button>
+			</li>
+		{{else ~GetPriceInfo().coinUsed == "N" && ~GetPriceInfo().coinRentUsed == "Y" && ~GetPriceInfo().pointUsed == "Y" && salePolicy.isUnlimitedFree != true && purchaseInfo.isFree != true && purchaseInfo.isPurchased != true &&  purchaseInfo.isRented != true}}
+			<li class="point"> 
+				<button type="button" class="pcon">
+				<span class="pcoinin">
+				    <span class="sp coin">Coin</span>
+					<span class="point_c"> <span class="aln">-/{{:~GetPriceInfo().coinRent}}</span></span>
+					<!--
+                                        <span class="point_p"><span class="sp">Point</span> <span class="aln">{{:~GetPriceInfo().point}}</span></span>
+					-->
+                                        <span class="aln"></span>
+				</span>
+				</button>
+			</li>
+		{{else ~GetPriceInfo().coinUsed == "N" && ~GetPriceInfo().coinRentUsed == "Y" && ~GetPriceInfo().pointUsed == "N" && salePolicy.isUnlimitedFree != true && purchaseInfo.isFree != true && purchaseInfo.isPurchased != true &&  purchaseInfo.isRented != true}}
+			<li class="point"> 
+				<button type="button" class="pcon">
+				<span class="pcoinin">
+					<span class="sp coin">Coin</span>
+					<span class="point_c"> <span class="aln">-/{{:~GetPriceInfo().coinRent}}</span></span>
+					<span class="aln"></span>
+				</span>
+				</button>
+			</li>
+		{{else}}
+			<li class="point">
+				<button type="button" class="pcon">
+				<span class="pcoinin">
+				    <span class="sp coin">Coin
+					<span class="point_c"></span> <span class="aln">{{:~GetPriceInfo().coin}}</span></span>
+                                <!--
+					<span class="point_p"><span class="sp coin">Point</span> <span class="aln">{{:~GetPriceInfo().point}}</span></span>
+					-->
+                                        <span class="aln"></span>
+				</span>
+				</button>
+			</li>
+		{{/if}}
+		 </ul>
+		</li>
+    </script>
+    <script>
+        $.extend(comico.Config, {titleId: "73", totalChapter: "102", level: "TLEV01"});
+    </script>
+    <script>
+        var rentalCycle = 0;
+        var unreceivedGift = 0;
+        var total = 0;
+        var remainingTime = 0;
+        var titleId = -1;
+        
+
+    </script>
+    <script src="/resources/js/lib/jquery.plugin.js"></script>
+    <script src="/resources/js/lib/jquery.countdown.js"></script>
+    <script src="/resources/js/lib/jquery.countdown-th.js" ></script>
+    <script src="/resources/js/lib/progressbar.js" ></script>
+
+    <script src="/asset/js/comico.chapters.min.js?201707100152 "></script>
+
+
+
+</div>
+</body>
+
+</html>
